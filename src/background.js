@@ -11,6 +11,8 @@ log.transports.console.level = "warn";
 });
 Object.assign(console, log.functions);
 
+console.warn("print on main process!")
+
 //create window on app activate
 app.on("activate", async () => {
   if (BrowserWindow.getAllWindows().length === 0) {
